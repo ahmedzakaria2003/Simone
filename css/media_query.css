@@ -1,0 +1,85 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  #navbar .container ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+  #navbar .container .nav-menu a {
+    display: block;
+    padding: 10px;
+  }
+  #navbar .container .nav-icon {
+    display: none;
+  }
+  #navbar label {
+    display: block;
+    margin-left: auto;
+  }
+  #navbar #menu:checked ~ .nav-menu {
+    /* display: flex */
+    max-height: 500px;
+  }
+  html {
+    font-size: 12px;
+  }
+
+  #about .about-area .about-left {
+    width: 100%;
+  }
+  #about .about-area .about-right {
+    width: 30%;
+    margin-top: 10px;
+  }
+  #about .counter .item {
+    width: 50%;
+    padding: 10px;
+  }
+  #service .service-area .item {
+    width: 100%;
+  }
+  #work .gallary .col {
+    width: calc((100% - 30px) / 2);
+  }
+  #work .gallary .cl {
+    margin-top: -180px;
+  }
+  #client .client-area .item{
+    width: 100%;
+  
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 6px;
+  }
+  #about .counter .item {
+    width: 100%;
+  }
+  #about .counter .item:not(:last-child) {
+    border-right: none;
+  }
+  #resume .resume-area .item,
+  #resume .skills .skills-area .item {
+    width: 100%;
+  }
+  #work .gallary .col {
+    width: 100%;
+  }
+  #work .gallary .cl {
+    margin-top: 0;
+  }
+}
